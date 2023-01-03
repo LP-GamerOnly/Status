@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <title>LP Hud</title>
+</head>
+
+<body>
+    <div id="container">
+        <div class="d-row player-other-info">
+            <div class="player-profile-image"><img
+                    src="https://cdn.discordapp.com/attachments/716251431426064425/921061936051933254/char_bank_maze.png"
+                    alt=""></div>
+            <div class="d-row-reverse">
+                <div class="player-id player-box1 d-flex" id="lPDIV"><span>12</span></div>
+                <div class="player-name d-flex" id="lPDIV"><span>lp</span></div>
+            </div>
+        </div>
+        <div class="d-row">
+            <div class="player-other-info2">
+                <div class="player-box2 player-job gj" id="lPDIV">
+                    <div class="job-img"><img src="./assets/imgs/briefcase.svg" alt=""></div>
+                    <div class="gj-info">
+                        <div class="info-name info-job-name"><span>lp</span></div>
+                        <!-- <div class="line" id="LINEDIV"></div> -->
+                        <div class="info-grade info-job-grade"><span>lp</span></div>
+                    </div>
+                </div>
+                <div class="player-box2 player-gang gj" id="lPDIV">
+                    <div class="gang-img"><img src="./assets/imgs/profile-2user.svg" alt=""></div>
+                    <div class="gj-info">
+                        <div class="info-name info-gang-name"><span>lp</span></div>
+                        <!-- <div class="line" id="LINEDIV"></div> -->
+                        <div class="info-grade info-gang-grade"><span>lp</span></div>
+                    </div>
+                </div>
+                <div class="player-box2 player-cash gj" id="lPDIV">
+                    <div><img src="./assets/imgs/wallet-money.svg" alt=""></div>
+                    <div class="other-info">
+                        <div class="other-name cash-count"><span>$ lp</span></div>
+                    </div>
+                </div>
+                <div class="player-box2 player-bank gj" id="lPDIV">
+                    <div><img src="./assets/imgs/card.svg" alt=""></div>
+                    <div class="other-info">
+                        <div class="other-name bank-count"><span>$ lp</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-column progress-bars">
+                <div class="player-status">
+                    <div class="player-box1 d-flex" id="lPDIV"><img src="./assets/imgs/heart.svg" alt=""></div>
+                    <div class="prog-bars health-prog">
+                        <div class="health prog" id="lPDIV"><span>100</span></div>
+                    </div>
+                </div>
+                <div class="player-status">
+                    <div class="player-box1 d-flex armorimg" id="lPDIV"><img src="./assets/imgs/armor.svg" alt="">
+                    </div>
+                    <div class="prog-bars armor-prog" >
+                        <div class="armor prog" id="lPDIV"><span>40</span></div>
+                    </div>
+                </div>
+                <div class="d-grid">
+                    <div class="player-status" style="grid-area: box1;">
+                        <div class="player-box1 d-flex" id="lPDIV"><img src="./assets/imgs/Group.svg" alt=""></div>
+                        <div class="prog-bars-mini hunger-prog">
+                            <div class="hunger prog" id="lPDIV"><span>100</span></div>
+                        </div>
+                    </div>
+                    <div class="player-status" style="grid-area: box2;">
+                        <div class="player-box1 d-flex" id="lPDIV"><img src="./assets/imgs/Group-1.svg" alt=""></div>
+                        <div class="prog-bars-mini thirst-prog">
+                            <div class="thirst prog" id="lPDIV"><span>24</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+@font-face {
+	font-family: Metrophobic;
+		src: url('../fonts/Mikhak-Bold.ttf') format('truetype');
+}
+*,
+*::after,
+::before{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+user-select: none;
+direction: rtl;
+font-family: Metrophobic;
+}
+
+:root{
+--MainColor:rgb(255, 96, 96);
+--MainColorRGB:rgb(255, 96, 96);
+}
+body{
+    background: transparent;
+}
+#container{
+    width: 20vw;
+    transform: scale(0.8);
+    position: relative;
+    margin-right: 0vw;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 2vw;
+    height: 12.738095238095237vw;
+}
+
+#container .player-profile-image {
+    width: 3.5714285714285716vw;
+    height: 3.5714285714285716vw;
+   position: relative;
+    border-radius: 0.8928571428571429vw;
+}
+
+#container .player-profile-image img {
+    width: 3.5714285714285716vw;
+    height: 4.1714285714285716vw;
+    position: absolute;
+    top: 0;
+    border-radius: 1.8928571428571429vw;
+}
+
+#container .player-box1 {
+    width: 2.6785714285714284vw;
+    height: 2.6785714285714284vw;
+    z-index: 111;
+    font-size: 1.3095238095238095vw;
+    color: #fff;
+    background-color: var(--MainColor);
+    border-radius: 0.8928571428571429vw;
+}
+
+#container .player-box2 {
+    width: 6.904761904761905vw;
+    height: 2.2052380952380953vw;
+    font-size: 1.3095238095238095vw;
+    margin: 0.3vw 0;
+    color: rgb(255, 255, 255);
+    
+    background-color: var(--MainColorRGB);
+    border-radius: 0.35714285714285715vw;
+}
+
+#lPDIV {
+    width: 300px;
+    height: 200px;
+    background: rgb(255, 96, 96);
+    animation: lprgb 20s infinite;
+  }
+  
+  @keyframes lprgb {
+    10% {background-color: rgb(255, 0, 0);}
+    20% {background-color: rgb(6, 160, 199);}
+    30% {background-color: rgb(3, 145, 62);}
+    40% {background-color: rgb(192, 206, 3);}
+    50% {background-color: rgb(179, 87, 255);}
+    60% {background-color: rgb(255, 87, 233);}
+    70% {background-color: rgb(131, 201, 1);}
+    80% {background-color: rgb(255, 145, 0);}
+    90% {background-color: rgb(127, 104, 255);}
+    100% {background-color: rgb(255, 96, 96);}
+
+  }
+
+
+
+
+#container .armorimg img {
+    margin-top:0.4vw;
+}
+
+#container .player-box2 img {
+    width: 0.9523809523809523vw;
+    height: 0.9523809523809523vw;
+}
+
+#container .player-armor img {
+margin-top: 0.5vw;
+}
+
+#container .player-box1 img {
+    width: 1.7vw;
+    height: 1.7vw;
+}
+
+.d-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 0.5357142857142857vw;
+    align-items: center;
+}
+.d-grid {
+    display: grid;
+    grid-template-areas: "box1 box2";
+    grid-template-columns: 50% 45%;
+    width: 100%;
+    justify-content: space-between;
+    grid-template-rows: 100%;
+}
+
+.d-row-reverse {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.d-column {
+    display: flex;
+    flex-direction: column;
+    height: 105%;
+    margin-top: -0.5vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container .player-name {
+    background-color: var(--MainColorRGB);
+    border-radius: 0.35714285714285715vw;
+    font-size: 0.9523809523809523vw;
+    height: 1.8452380952380953vw;
+    color: #fff;
+    margin-left: -0.5vw;
+    flex-direction: row-reverse;
+}
+
+#container .gj {
+    display: flex;
+    padding-left: 0.2357142857142857vw;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+#container .gj .gj-info {
+    text-align: left;
+    width: 100%;
+    margin-left: 0.2976190476190476vw;
+  
+}
+#container .gj .other-info .other-name{
+font-size: 0.8333333333333334vw;
+}
+
+#container .gj .other-info {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.2976190476190476vw;
+  
+}
+#container .gj .gj-info .line{
+    width: 100%;
+    border: 0.05952380952380952vw solid rgb(255, 96, 96);
+}
+#container .gj .gj-info .info-grade {
+font-size: 0.5952380952380952vw;
+}
+#container .gj .gj-info .info-name {
+    font-size: 0.7142857142857143vw;
+}
+
+#container .player-status {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    align-items: center;
+
+}
+
+#container .prog-bars {
+    width: 10.0vw;
+    border-radius: 0.35714285714285715vw;
+    color: rgb(255, 96, 96);
+    margin-left: -0.5vw;
+    height: 1.8452380952380953vw;
+}
+#container .prog-bars-mini {
+    width: 3.9vw;
+    border-radius: 0.35714285714285715vw;
+    color: rgb(255, 96, 96);
+    margin-left: -0.5vw;
+    height: 1.8452380952380953vw;
+}
+
+#container .player-status .prog {
+width: 100%;
+height: 100%;
+background: rgb(255, 96, 96);
+border-radius: 0.35714285714285715vw;
+float: left;
+transition: all 0.5s linear;
+color: #fff;
+display: flex;
+align-items: center;
+justify-content: start;
+}
+
+
+#container .player-status .prog span {
+    margin-right: 0.3vw;
+}
+
+#container .player-status .thirst {
+width: 56%;
+background: rgb(255, 96, 96);
+}
+
+#container .player-status .armor {
+    width: 40%;
+
+    background: rgb(255, 96, 96);
+}
+
+#container .player-status .prog {
+    font-size: 1vw;
+}
+.progress-bars {
+transition: all 0.4s linear;
+}
